@@ -7,9 +7,12 @@ import Button from "./Button"
 
 ReactDOM.render(
   <div>
-    <Button size="small" />
-    <Button />
-    <Button size="large" />
+    <Button size="small">
+      <span>123</span>
+      <span>123</span>
+    </Button>
+    <Button> 1 2</Button>
+    <Button size="large">3</Button>
   </div>,
   document.getElementById("root")
 )
