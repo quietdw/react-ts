@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Layout: React.FunctionComponent & { Header: React.FunctionComponent } = () => {
+type Layout = React.FunctionComponent & { Header: React.FunctionComponent }  // type相给已知的类型当于一个别名，一般大写，interface是新建一个类型
+const Layout: Layout = () => {
     return React.createElement('div', null, 'hi')
 }
 
