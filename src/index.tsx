@@ -7,7 +7,7 @@ import Button from "./Button"
 
 const fn: React.MouseEventHandler = function(e) {
   console.log(1111)
-  console.log(e)
+  // console.log(e)
 }
 
 ReactDOM.render(
