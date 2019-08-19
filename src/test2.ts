@@ -1,4 +1,5 @@
 import React from 'react'
+import { log } from 'util';
 
 interface A {
     name: string
@@ -24,6 +25,16 @@ function add(a: any, b: any) {
 }
 add(1, 2)
 
+// 字面量类型
+interface Direction {
+    value: 'west' | 'east' | 'south' | 'north' // 字面量类型和或经常一起使用后
+}
+
+const dir: Direction = {
+    value: 'west'
+}
+
+console.log(dir);
 
 
 export default { dd }
